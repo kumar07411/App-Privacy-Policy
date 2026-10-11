@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ZyppCut</title>
+    <style>
+        :root {
+            --primary: #8A2BE2;
+            --secondary: #00D2D3;
+            --bg-dark: #121214;
+            --card-bg: #1A1A1E;
+            --text-main: #EAEAEA;
+            --text-muted: #A0A0A8;
+            --border-color: #2D2D35;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px 32px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+
+        .effective-date {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: rgba(138, 43, 226, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #D8B4FE;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="badge">ZyppCut App</span>
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Last updated: October 2026</p>
+    </header>
+
+    <div class="highlight-box">
+        <p><strong>Summary:</strong> ZyppCut processes your videos 100% locally on your device. We do not collect, upload, or store your videos on any external server.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>
+        Welcome to <strong>ZyppCut</strong> ("we", "our", or "us"). We are committed to protecting your privacy. 
+        This Privacy Policy explains how our mobile application handles user data, permissions, and advertising.
+        By using ZyppCut, you agree to the collection and use of information in accordance with this policy.
+    </p>
+
+    <h2>2. Video Processing & Media Files (100% On-Device)</h2>
+    <p>
+        ZyppCut is designed to cut, trim, and split video files directly on your Android device. 
+    </p>
+    <ul>
+        <li><strong>On-Device Processing:</strong> All video trimming operations are executed locally using on-device FFmpeg tools. Your videos never leave your smartphone.</li>
+        <li><strong>No Uploads:</strong> We do not have servers to receive, view, or process your video files.</li>
+        <li><strong>Storage of Cut Clips:</strong> Cut video clips are saved directly to your phone's public gallery storage under the <code>Movies/ZyppCut</code> folder using Android's standard MediaStore API.</li>
+    </ul>
+
+    <h2>3. Permissions We Use</h2>
+    <p>
+        ZyppCut requests only the necessary permissions required to operate smoothly:
+    </p>
+    <ul>
+        <li><strong>Storage Permissions (Read/Write External Storage on Android 12 and below):</strong> Used solely to read selected video files and save processed clips to your device. On Android 13+, system file pickers and scoped storage are utilized without broad storage access.</li>
+        <li><strong>Internet & Network State:</strong> Used to load and display advertisements and verify connectivity prior to ad-supported actions.</li>
+        <li><strong>Advertising ID (AD_ID):</strong> Used by third-party advertising SDKs to serve personalized or contextual advertisements.</li>
+    </ul>
+
+    <h2>4. Third-Party Advertising Services</h2>
+    <p>
+        To keep ZyppCut free for all users, our app integrates third-party advertising services. These third-party services may collect certain device information to serve relevant ads:
+    </p>
+    <ul>
+        <li><strong>Unity Ads (Unity Technologies):</strong> May collect device identifiers (such as Google Advertising ID), IP address, device brand/model, OS version, and network provider to deliver banner and interstitial advertisements.</li>
+    </ul>
+    <p>
+        For more information on how Unity Ads collects and processes data, please review the 
+        <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a>.
+    </p>
+
+    <h2>5. Opt-Out of Personalized Ads</h2>
+    <p>
+        You can opt out of interest-based and personalized advertising at any time through your Android device settings:
+    </p>
+    <ul>
+        <li>Go to <strong>Settings</strong> &gt; <strong>Google</strong> &gt; <strong>Ads</strong>.</li>
+        <li>Select <strong>"Delete advertising ID"</strong> or toggle <strong>"Opt out of Ads Personalization"</strong>.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+        ZyppCut is not targeted towards children under the age of 13. We do not knowingly collect personally identifiable information from children. If you believe that your child has provided us with personal information, please contact us immediately so we can take appropriate measures.
+    </p>
+
+    <h2>7. Security</h2>
+    <p>
+        Because all video operations take place locally on your device, your personal video files remain secure under the protection of Android's operating system sandboxing.
+    </p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+        We may update our Privacy Policy periodically. Any updates will be reflected on this page with an updated effective date. We encourage you to review this policy periodically for any changes.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+        If you have any questions, concerns, or feedback regarding this Privacy Policy or the ZyppCut app, please contact us at:
+    </p>
+    <p>
+        <strong>Email:</strong> <a href="mailto:support@zyppcut.app">support@zyppcut.app</a><br>
+        <strong>App:</strong> ZyppCut - Fast Video Cutter & Trimmer
+    </p>
+
+    <footer>
+        &copy; 2026 ZyppCut. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
 
